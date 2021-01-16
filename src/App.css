@@ -35,6 +35,9 @@ form button:hover {
   color: white;
   outline: none;
 }
+form button:focus {
+  outline: none;
+}
 form input:hover {
   outline: none;
 }
