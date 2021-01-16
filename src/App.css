@@ -5,7 +5,8 @@
 }
 body {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  color: white;
+  /* color: white; */
+  color: #1F2937;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
@@ -25,14 +26,17 @@ form button {
   background: white;
 }
 form button {
-  color: #ff6f47;
+  /* color: #ff6f47; */
+  color: #1F2937;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  /* background: #ff6f47; */
+  background: #1F2937;
   color: white;
+  /* color: #1F2937; */
   outline: none;
 }
 form button:focus {
@@ -122,7 +126,8 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  /* color: #ff6f47; */
+  color: #1F2937; 
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -134,13 +139,14 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  /* background: #ff6f47; */
+  background-color: #1F2937;
+  color: white;
   cursor: pointer;
   pointer-events: none;
 }
 /* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
+
+form:hover {
+  transform: scale(1.05);
 }
-*/
