@@ -147,6 +147,6 @@ select {
 }
 /* Transition */
 
-form:hover {
+/* form:hover {
   transform: scale(1.05);
-}
+} */
