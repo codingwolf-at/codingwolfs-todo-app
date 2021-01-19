@@ -28,29 +28,29 @@ function App() {
   // }
 
   // run once when the app starts
-  // useEffect(() => {
-  //   getLocalTodos();
-  // }, []);
+  useEffect(() => {
+    getLocalTodos();
+  }, []);
 
   // USE EFFECT (run every time todos or status updates)
-  // useEffect(() => {
-  //   filterHandler();
-  //   saveLocalTodos();  
-  // }, [todos, status]);
+  useEffect(() => {
+    // filterHandler();
+    saveLocalTodos();  
+  }, [todos]);
 
   // // save to local storage
-  // const saveLocalTodos = () => {
-  //   localStorage.setItem('todos', JSON.stringify(todos));
-  // }
-  // // get from local storage
-  // const getLocalTodos = () => {
-  //   if (localStorage.getItem('todos') === null) {
-  //     localStorage.setItem('todos', JSON.stringify([]));
-  //   } else {
-  //     let todoLocal = localStorage.getItem('todos', JSON.stringify(todos));
-  //     setTodos(todoLocal);
-  //   }
-  // }
+  const saveLocalTodos = () => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }
+  // get from local storage
+  const getLocalTodos = () => {
+    if (localStorage.getItem('todos') === null) {
+      localStorage.setItem('todos', JSON.stringify([]));
+    } else {
+      let todoLocal = JSON.parse(localStorage.getItem('todos'));
+      setTodos(todoLocal);
+    }
+  }
 
 
   return (
