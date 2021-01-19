@@ -65,6 +65,9 @@ form input:focus {
   align-items: center;
   transition: all 1s ease;
 }
+.todo:hover {
+  transform: scale(1.05);
+}
 .filter-todo {
   padding: 1rem;
 }
