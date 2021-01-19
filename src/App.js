@@ -27,10 +27,30 @@ function App() {
     }
   }
 
-  // USE EFFECT
+  // run once when the app starts
+  // useEffect(() => {
+  //   getLocalTodos();
+  // }, []);
+
+  // USE EFFECT (run every time todos or status updates)
   useEffect(() => {
     filterHandler();
+    // saveLocalTodos();  
   }, [todos, status]);
+
+  // // save to local storage
+  // const saveLocalTodos = () => {
+  //   localStorage.setItem('todos', JSON.stringify(todos));
+  // }
+  // // get from local storage
+  // const getLocalTodos = () => {
+  //   if (localStorage.getItem('todos') === null) {
+  //     localStorage.setItem('todos', JSON.stringify([]));
+  //   } else {
+  //     let todoLocal = localStorage.getItem('todos', JSON.stringify(todos));
+  //     setTodos(todoLocal);
+  //   }
+  // }
 
 
   return (
@@ -38,8 +58,8 @@ function App() {
       <header>
         <h1>codingWolf's TODO List</h1>
       </header>
-      <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText} setStatus={setStatus} filteredTodos={filteredTodos} />
-      <TodoList setTodos={setTodos} todos={todos}/>
+      <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText} setStatus={setStatus} />
+      <TodoList setTodos={setTodos} todos={todos} filteredTodos={filteredTodos} />
     </div>
   );
 }
