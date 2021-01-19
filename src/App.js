@@ -13,19 +13,19 @@ function App() {
   const [filteredTodos, setFilteredTodos] = useState("all");
   
   // functions
-  const filterHandler = () => {
-    switch(status){
-      case 'completed':
-        setFilteredTodos(todos.filter(todo => todo.completed === true));
-        break;
-      case 'uncompleted':
-        setFilteredTodos(todos.filter(todo => todo.completed === false))
-        break;
-      default:
-        setFilteredTodos(todos);
-        break;
-    }
-  }
+  // const filterHandler = () => {
+  //   switch(status){
+  //     case 'completed':
+  //       setFilteredTodos(todos.filter(todo => todo.completed === true));
+  //       break;
+  //     case 'uncompleted':
+  //       setFilteredTodos(todos.filter(todo => todo.completed === false))
+  //       break;
+  //     default:
+  //       setFilteredTodos(todos);
+  //       break;
+  //   }
+  // }
 
   // run once when the app starts
   // useEffect(() => {
@@ -33,10 +33,10 @@ function App() {
   // }, []);
 
   // USE EFFECT (run every time todos or status updates)
-  useEffect(() => {
-    filterHandler();
-    // saveLocalTodos();  
-  }, [todos, status]);
+  // useEffect(() => {
+  //   filterHandler();
+  //   saveLocalTodos();  
+  // }, [todos, status]);
 
   // // save to local storage
   // const saveLocalTodos = () => {

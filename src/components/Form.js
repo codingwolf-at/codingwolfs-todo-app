@@ -18,9 +18,9 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
         setInputText("");
     }
 
-    const statusHandler = (e) => {
-        setStatus(e.target.value)
-    }
+    // const statusHandler = (e) => {
+    //     setStatus(e.target.value)
+    // }
 
     return (
         <form>
