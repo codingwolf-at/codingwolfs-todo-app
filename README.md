@@ -1,5 +1,7 @@
 # codingWolf's Todo List App
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/codingwolf-at/codingwolfs-todo-app)
+
 ![GIF](public/todo.gif)
 
 This is a __Todo List App__ made using __React__ by me. 
